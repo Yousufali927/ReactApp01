@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+APP UTILITY :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TextUtils is a Basic React app that helps the user modify their text,
+some functionalities of it are converting the text to uppercase, lowercase, copying the text etc..
+It also has a darkMode feature that changes the state of the app which changes the background color and text,
 
-## Available Scripts
 
-In the project directory, you can run:
+Features Used :
 
-### `npm start`
+The reactRouter helps navigate to different pages(without loading the page)
+The app uses react function based components which are present in /src/components/
+I've broken it down into 4 components
+1. NavBar
+2. Alert
+3. Textform
+4. About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+About The Components :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+--> The navbar componet includes two "pages" that are on the website and the darkmode button
+--> The Alert component is placed right after the navbar which is rendered when the state of "alert" variable 
+    is changed { app.js 17/ "" const [alert, setAlert] = useState(null); ""}
+--> The textform component has a textform and buttons below it which transform the text into said       functionality
+--> The about component is basically just a page to see how the reactRouter setup works there are some deprecated tags like <Switch> which are replaced by <Routes>.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Help :
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note : The "node_modules" folder is included in the .gitignore file 
+So Don't forget to reinitialise the "node_modules" folder if you intend on forking the project and taking a look at it yourself..
